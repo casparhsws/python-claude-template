@@ -62,7 +62,7 @@ Use AskUserQuestion to gather necessary details:
 - Ask: "Should this command integrate with existing workflows?"
 - Examples:
   - Follow git conventions from CLAUDE.md?
-  - Run quality checks (poe check, tests)?
+  - Run quality checks (uv run poe check, tests)?
   - Create commits or PRs?
 - Identify relevant CLAUDE.md guidelines to incorporate
 

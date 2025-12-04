@@ -1,7 +1,7 @@
 Run full type validation across the workspace.
 
 Steps:
-1. Run `poe typecheck` (mypy in strict mode)
+1. Run `uv run poe typecheck` (mypy in strict mode)
 2. If errors found:
    - List each error with file path and line number
    - Group by file

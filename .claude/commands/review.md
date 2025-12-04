@@ -7,5 +7,5 @@ Steps:
    - Test coverage for new/changed code
    - Follows project conventions (ruff, mypy strict)
    - No security issues or hardcoded secrets
-3. Run `poe check` to verify lint and type errors
+3. Run `uv run poe check` to verify lint and type errors
 4. Summarize findings and suggested fixes
