@@ -1,6 +1,6 @@
 # 🐍 Python Claude Template
 
-> Production-ready Python monorepo template with Claude Code integration, pre-configured agents, commands, and skills for AI-powered development.
+> Python monorepo template with Claude Code integration, pre-configured agents, commands, and skills for AI-powered development.
 
 [![Python](https://img.shields.io/badge/Python-3.12+-blue.svg)](https://www.python.org/)
 [![uv](https://img.shields.io/badge/uv-package%20manager-green.svg)](https://github.com/astral-sh/uv)
@@ -11,7 +11,7 @@
 
 ## 📋 Overview
 
-This template provides a **production-ready Python development environment** integrated with **Claude Code**, Anthropic's AI-powered coding assistant. It combines modern Python tooling with AI capabilities through custom agents, slash commands, and skills.
+This template provides a **Python development environment** integrated with **Claude Code**, Anthropic's AI-powered coding assistant. It combines modern Python tooling with AI capabilities through custom agents, slash commands, and skills.
 
 ### Why This Template?
 
@@ -64,7 +64,7 @@ This template provides a **production-ready Python development environment** int
 
 Pre-configured with powerful AI development tools:
 
-- 🤖 **2 Custom Agents** - Specialized AI assistants for specific tasks
+- 🤖 **2 Custom Agents** - Specialised AI assistants for specific tasks
 - ⚡ **12 Slash Commands** - Quick workflows at your fingertips
 - 🎯 **1 Skill** - Python testing expertise built-in
 
@@ -84,7 +84,7 @@ Learn more: [Claude Code Best Practices](https://www.anthropic.com/engineering/c
 
 ## 🎭 Agents
 
-**Agents** are specialized AI assistants that can be launched to handle complex, multi-step tasks autonomously. They have specific tool access and system prompts tailored to their purpose.
+**Agents** are specialised AI assistants that can be launched to handle complex, multi-step tasks autonomously. They have specific tool access and system prompts tailored to their purpose.
 
 ### Included Agents
 
@@ -279,7 +279,7 @@ python-claude-template/
 - 🎯 [Agent Skills Overview](https://docs.claude.com/en/docs/agents-and-tools/agent-skills/overview) - Understanding skills architecture
 - 🤖 [Building Agents Guide](https://www.anthropic.com/engineering/building-agents-with-the-claude-agent-sdk) - Create your own agents
 - ✨ [Introducing Agent Skills](https://www.anthropic.com/news/skills) - Skills announcement and examples
-- 🔧 [Customize Claude Code](https://www.anthropic.com/news/claude-code-plugins) - Plugins and customization
+- 🔧 [Customise Claude Code](https://www.anthropic.com/news/claude-code-plugins) - Plugins and customisation
 - 🎓 [Anthropic Academy](https://www.anthropic.com/learn/build-with-claude) - Learn to build with Claude
 
 ### Python Tools Documentation
