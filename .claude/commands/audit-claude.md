@@ -1,6 +1,6 @@
 Audit Claude Code configuration for consistency and issues.
 
-Use the claude-config-auditor agent to analyze:
+Use the claude-config-auditor agent to analyse:
 - CLAUDE.md project instructions
 - .claude/agents/ configurations
 - .claude/commands/ definitions

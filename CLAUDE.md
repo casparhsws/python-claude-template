@@ -54,4 +54,4 @@ uv run poe fix         # Auto-fix lint issues and format
 - **Surface important decision points** before implementation - don't assume or guess
 - **Present options with trade-offs** when multiple valid approaches exist
 - **Confirm architectural choices** that will impact the codebase significantly
-
+- **British English Spelling** Use British English spelling throughout (do not correct imported code)

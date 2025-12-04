@@ -65,7 +65,7 @@ This template provides a **production-ready Python development environment** int
 Pre-configured with powerful AI development tools:
 
 - 🤖 **2 Custom Agents** - Specialized AI assistants for specific tasks
-- ⚡ **9 Slash Commands** - Quick workflows at your fingertips
+- ⚡ **12 Slash Commands** - Quick workflows at your fingertips
 - 🎯 **1 Skill** - Python testing expertise built-in
 
 ---
@@ -125,6 +125,9 @@ Audits and verifies consistency across Claude Code configuration files, identify
 | `/commit` | Stage changes and create a conventional commit with AI-generated message |
 | `/feature` | Create a new feature branch and plan implementation |
 | `/fix-issue` | Fix a GitHub issue by number with automated workflow |
+| `/make-agent` | Scaffold a new Claude Code agent with guided workflow |
+| `/make-command` | Scaffold a new slash command following best practices |
+| `/make-skill` | Scaffold a new skill with domain expertise guidelines |
 | `/pr` | Create a pull request with AI-generated summary and test plan |
 | `/review` | Run code review on recent changes with quality checks |
 | `/status` | Show comprehensive project status (git, tests, types, lint) |
@@ -153,7 +156,7 @@ claude> /test
 
 ## 🎯 Skills
 
-**Skills** are organized folders of instructions, scripts, and resources that Claude can discover and load dynamically. They extend Claude's capabilities with your team's expertise.
+**Skills** are organised folders of instructions, scripts, and resources that Claude can discover and load dynamically. They extend Claude's capabilities with your team's expertise.
 
 ### Included Skills
 
@@ -244,6 +247,9 @@ python-claude-template/
 │   │   ├── commit.md
 │   │   ├── feature.md
 │   │   ├── fix-issue.md
+│   │   ├── make-agent.md
+│   │   ├── make-command.md
+│   │   ├── make-skill.md
 │   │   ├── pr.md
 │   │   ├── review.md
 │   │   ├── status.md
@@ -285,11 +291,25 @@ python-claude-template/
 
 ---
 
-## 🎨 Customization
+## 🎨 Customisation
 
-### Adding Your Own Agent
+### Creating New Agents
 
-Create a new file in `.claude/agents/your-agent.md`:
+**Recommended:** Use the scaffolding command for guided, best-practices agent creation:
+
+```bash
+claude> /make-agent "builds Docker configurations optimised for Python applications"
+```
+
+This will guide you through the process with research, clarifying questions, and automatic generation.
+
+**Alternative:** Use Claude Code's built-in agent scaffolder:
+
+```bash
+claude> /agents
+```
+
+**Manual:** Create a new file `.claude/agents/your-agent.md`:
 
 ```yaml
 ---
@@ -305,10 +325,18 @@ Your agent's system prompt here...
 
 ### Creating Custom Commands
 
-Add a new file in `.claude/commands/your-command.md`:
+**Recommended:** Use the scaffolding command:
+
+```bash
+claude> /make-command "run security audit on dependencies"
+```
+
+This researches existing patterns and generates well-structured command files automatically.
+
+**Manual:** Add a new file `.claude/commands/your-command.md`:
 
 ```markdown
-Brief description of what this command does
+Brief description of what this command does: $ARGUMENTS
 
 Steps:
 1. First step
@@ -318,9 +346,21 @@ Steps:
 
 ### Building Custom Skills
 
-Create a new directory `.claude/skills/your-skill/` with a `SKILL.md` file:
+**Recommended:** Use the scaffolding command:
+
+```bash
+claude> /make-skill "advanced PostgreSQL query optimization techniques"
+```
+
+This creates a complete skill directory with comprehensive guidelines and examples.
+
+**Manual:** Create a new directory `.claude/skills/your-skill/` with a `SKILL.md` file:
 
 ```markdown
+---
+description: Brief description of what expertise this skill provides
+---
+
 # Your Skill Name
 
 Description and instructions for the skill...

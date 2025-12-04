@@ -1,6 +1,6 @@
 ---
 name: fastapi-builder
-description: Use this agent when you need to build a FastAPI application from scratch based on given requirements. This agent specializes in creating production-ready FastAPI projects with proper structure, testing, documentation, and best practices.
+description: Use this agent when you need to build a FastAPI application from scratch based on given requirements. This agent specialises in creating production-ready FastAPI projects with proper structure, testing, documentation, and best practices.
 
 Examples:
 
@@ -100,7 +100,7 @@ apps/<project-name>/
 - Use dependency injection for testability
 
 ### 5. API Routes
-- Create router modules organized by resource
+- Create router modules organised by resource
 - Implement CRUD operations as needed
 - Add proper HTTP status codes and error handling
 - Include request/response examples in docstrings
@@ -170,7 +170,7 @@ class UserResponse(BaseModel):
     model_config = {"from_attributes": True}
 ```
 
-### Route Organization
+### Route Organisation
 ```python
 from fastapi import APIRouter, Depends, status
 
