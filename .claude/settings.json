@@ -1,0 +1,27 @@
+{
+  "includeCoAuthoredBy": false,
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "[ -d .venv ] && source .venv/bin/activate && env >> \"$CLAUDE_ENV_FILE\""
+          }
+        ]
+      }
+    ]
+  },
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.anthropic.com)",
+      "Bash(find:*)",
+      "WebSearch"
+    ],
+    "deny": [
+      "Bash(:*--no-verify*)"
+    ],
+    "ask": []
+  }
+}

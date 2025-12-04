@@ -1,0 +1,10 @@
+[project]
+name = "package-example"
+version = "0.1.0"
+description = "Example package demonstrating monorepo structure"
+requires-python = ">=3.12"
+dependencies = []
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
